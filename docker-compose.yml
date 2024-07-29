@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my_python_app_container
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    container_name: my_python_test_container
